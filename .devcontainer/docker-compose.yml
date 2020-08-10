@@ -1,0 +1,15 @@
+version: '3'
+services:
+  rocket:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /rocket
+    ports:
+      - 8000:8000
+    volumes:
+      - ../:/rocket
+      - target-data:/rocket/target
+    tty: true
+volumes:
+  target-data:

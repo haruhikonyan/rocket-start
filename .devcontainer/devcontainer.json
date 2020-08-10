@@ -1,0 +1,18 @@
+{
+  "name": "rocket-start",
+  "dockerComposeFile": [
+    "./docker-compose.yml",
+  ],
+  "service": "rocket",
+  "workspaceFolder": "/rocket",
+  "extensions": [
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "editor.formatOnSave": true,
+  },
+  // "postCreateCommand": "cargo watch -x run",
+}
